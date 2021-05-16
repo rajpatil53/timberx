@@ -37,7 +37,7 @@ function ProductGrid({ products, showSkeleton }: Props): ReactElement {
             }
         }
         return productTiles;
-    }, [pageNum, showSkeleton]);
+    }, [pageNum, showSkeleton, products]);
 
     const onPageSelected = useCallback((_: object, page: number) => {
         setPageNum(page);

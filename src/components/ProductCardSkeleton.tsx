@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react'
-import { Skeleton } from '@material-ui/lab'
 import ContentLoader from 'react-content-loader'
 
 interface Props {

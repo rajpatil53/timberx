@@ -5,7 +5,7 @@ interface Props {
 
 }
 
-function Header({ }: Props): ReactElement {
+function Header(props: Props): ReactElement {
     return (
         <header className="w-screen border-b-2 h-20">
             <div className="container px-4 mx-auto flex justify-between items-center h-full">

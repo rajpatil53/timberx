@@ -5,7 +5,7 @@ interface Props {
 
 }
 
-function Footer({ }: Props): ReactElement {
+function Footer(props: Props): ReactElement {
     return (
         <footer className="w-full bg-gray-100 p-8">
             <div className="container px-4 mx-auto text-textColor flex justify-between flex-col md:flex-row">

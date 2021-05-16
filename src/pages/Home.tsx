@@ -8,7 +8,7 @@ interface Props {
 
 }
 
-function Home({ }: Props): ReactElement {
+function Home(props: Props): ReactElement {
     const [products, setProducts] = useState<Product[]>([]);
     const [sorting, setSorting] = useState(SORT_TYPES.DEFAULT.value);
     const [searchedProduct, setSearchedProduct] = useState('');
