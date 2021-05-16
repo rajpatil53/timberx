@@ -1,6 +1,6 @@
 import { Alert, Pagination } from '@material-ui/lab';
 import React, { ReactElement, useCallback, useEffect, useMemo, useState } from 'react'
-import { gridCols, gridRows, pageSize } from '../constants';
+import { pageSize } from '../constants';
 import ProductCard from './ProductCard';
 import ProductCardSkeleton from './ProductCardSkeleton';
 
@@ -49,9 +49,9 @@ function ProductGrid({ products, showSkeleton }: Props): ReactElement {
 
     return (
         <div className="my-8 flex flex-col items-end">
-            <div className={`w-full grid grid-cols-1 grid-rows-${pageSize} 
-                        sm:grid-cols-2 sm:grid-rows-${parseInt((pageSize / 2).toString())}  
-                        md:grid-cols-${gridCols} md:grid-rows-${gridRows} 
+            <div className={`w-full grid grid-cols-1 grid-rows-12
+                        sm:grid-cols-2 sm:grid-rows-6 
+                        md:grid-cols-3 md:grid-rows-4
                         gap-6 xl:gap-10`}>
                 {productGrid}
             </div>

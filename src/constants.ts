@@ -21,6 +21,4 @@ export const SORT_TYPES: SortTypes = {
     },
 }
 
-export const pageSize = 9;
-export const gridCols = 3;
-export const gridRows = 3;
+export const pageSize = 12;

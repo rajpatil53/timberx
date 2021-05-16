@@ -16,7 +16,7 @@ interface Product {
     id: string;
     name: string;
     brand: string;
-    image: string[];
+    image: string;
     price: number;
     rating: number;
 }

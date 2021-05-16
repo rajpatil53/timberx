@@ -5,7 +5,7 @@ import { Favorite, StarBorderOutlined } from '@material-ui/icons';
 interface Props {
     name: string;
     brand: string;
-    image: string[];
+    image: string;
     price: number;
     rating: number;
 }
@@ -14,7 +14,7 @@ function ProductCard({ name, brand, image, price, rating }: Props): ReactElement
     return (
         <div className="w-full">
             <div className="overflow-hidden rounded-lg shadow-sm border">
-                <img alt="Placeholder" className="block h:60 sm:h-40 lg:h-60 xl:h-80 w-full object-contain py-2" src={image[0]}></img>
+                <img alt="Placeholder" className="block h:60 sm:h-40 lg:h-60 xl:h-80 w-full object-contain py-2" src={image}></img>
                 <header className="flex flex-col justify-center leading-tight px-4 md:px-4">
                     <div className="flex justify-between items-center">
                         <h1 className="text-lg whitespace-nowrap overflow-hidden overflow-ellipsis">
